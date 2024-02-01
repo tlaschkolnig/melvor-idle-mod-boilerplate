@@ -1,7 +1,7 @@
 {
-  "name": "melvor-idle-mod-boilerplate",
+  "name": "raids",
   "version": "1.0.0",
-  "description": "",
+  "description": "MelvorIdle mod, adding content",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

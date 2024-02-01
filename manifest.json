@@ -1,5 +1,5 @@
 {
-  "namespace": "modBoilerplate",
+  "namespace": "raids",
   "setup": "setup.mjs",
   "load": ["templates/templates.html"]
 }

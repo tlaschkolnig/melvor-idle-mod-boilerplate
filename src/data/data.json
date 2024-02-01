@@ -1,6 +1,55 @@
 {
   "$schema": "https://melvoridle.com/assets/schema/gameData.json",
   "data": {
+    "monsters": [{
+        "id": "Lioness",
+        "name": "Lioness",
+        "description": "a fierce lioness is fighting you",
+        "media": "assets/lioness_pic.png",
+        "levels": {
+            "Hitpoints": 800,
+            "Attack": 100,
+            "Strength": 100,
+            "Defence": 100,
+            "Ranged": 100,
+            "Magic": 100
+        },
+        "equipmentStats": [{
+            "key": "attackSpeed",
+            "value": 2000
+        }],
+        "ignoreCompletion": true,
+        "attackType": "melee",
+        "specialAttacks": [],
+        "passives": [],
+        "lootChance": 0,
+        "lootTable": [],
+        "gpDrops": {
+            "min": 0,
+            "max": 1
+        },
+        "canSlayer": false,
+        "isBoss": false,
+        "selectedSpell": "melvorD:EarthBlast"
+    }],
+    "combatAreas": [{
+        "id": "Savannah",
+        "name": "Savannah",
+        "media": "assets/areapic.png",
+        "monsterIDs": ["raids:Lioness"],
+        "difficulty": [3, 4],
+        "entryRequirements": [{
+            "type": "SkillLevel",
+            "skillID": "melvorD:Slayer",
+            "level": 70
+        }]
+    }],
+    "combatAreaDisplayOrder": [{
+        "insertAt": "End",
+        "ids": [
+            "raids:Savannah"
+        ]
+    }]
     
-  }
+}
 }
